@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="stylecart.css">
+</head>
+<body>
+    <nav>
+        <a href="cart1.html">Cart</a>
+        <a href="cart2.html">Review</a>
+        <a href="cart3.html">Payment</a>
+    </nav>
+    
+    <div class="container">
+        <h2>Payment Details</h2>
+        <form class="payment-form" onsubmit="placeOrder(event)">
+            <label for="card-name">Cardholder Name:</label>
+            <input type="text" id="card-name" required>
+            
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" required>
+            
+            <label for="expiry">Expiry Date:</label>
+            <input type="month" id="expiry" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+    
+    <script>
+        function placeOrder(event) {
+            event.preventDefault();
+            alert("Order Placed Successfully!");
+        }
+    </script>
+</body>
+</html>
