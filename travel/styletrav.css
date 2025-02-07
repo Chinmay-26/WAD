@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8d210;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    padding: 10px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero img {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Page */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pagination {
+    text-align: center;
+    padding: 20px;
+}
+
+.pagination a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.pagination a:hover {
+    background: #45a049;
+}
+
+/* About Page */
+.authors {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.author-profile {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+}
+
+.author-profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #f8d210;
+}
